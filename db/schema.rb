@@ -54,8 +54,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_13_162643) do
 
   create_table "articles", force: :cascade do |t|
     t.text "content"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
